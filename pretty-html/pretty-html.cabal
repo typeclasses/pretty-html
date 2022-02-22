@@ -9,10 +9,24 @@ description:
     An HTML-building library that gives you some control over
     how the HTML is rendered, to produce human-readable results.
 
+extra-doc-files: readme.md
+
+build-type: Simple
+
 data-dir: data
 data-files: example.html
 
-extra-doc-files: readme.md
+homepage:       https://github.com/typeclasses/pretty-html
+bug-reports:    https://github.com/typeclasses/pretty-html/issues
+author:         Chris Martin
+maintainer:     Chris Martin, Julie Moronuki
+copyright:      2022 Mission Valley Software LLC
+license:        MIT
+license-file:   license.txt
+
+source-repository head
+    type: git
+    location: https://github.com/typeclasses/pretty-html
 
 common base
     default-language: Haskell2010
