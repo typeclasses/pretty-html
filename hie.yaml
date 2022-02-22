@@ -1,0 +1,6 @@
+cradle:
+  cabal:
+    - path: "./pretty-html/library/pretty-html"
+      component: "lib:pretty-html"
+    - path: "./pretty-html/test-suite/test-pretty-html"
+      component: "test:test-pretty-html"

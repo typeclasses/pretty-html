@@ -1,0 +1,6 @@
+packages: pretty-html
+
+constraints:
+    base == 4.13.*
+  , bytestring == 0.10.12.*
+  , text == 1.2.4.*
