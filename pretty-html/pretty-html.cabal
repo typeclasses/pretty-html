@@ -1,7 +1,7 @@
 cabal-version: 3.0
 
 name: pretty-html
-version: 0.1.0.0
+version: 0.1.0.1
 synopsis: Produce nice human-readable HTML
 category: HTML
 
@@ -9,9 +9,7 @@ description:
     An HTML-building library that gives you some control over
     how the HTML is rendered, to produce human-readable results.
 
-extra-doc-files: readme.md
-
-build-type: Simple
+extra-source-files: *.md
 
 data-dir: data
 data-files: example.html
@@ -36,10 +34,10 @@ common base
         LambdaCase
         OverloadedStrings
     build-depends:
-        base ^>= 4.13 || ^>= 4.14 || ^>= 4.15 || ^>= 4.16
-      , text ^>= 1.2.4
+        base ^>= 4.14 || ^>= 4.15 || ^>= 4.16 || ^>= 4.17
+      , text ^>= 1.2.4 || ^>= 2.0
     mixins:
-        base
+      , base
             ( Prelude
             , Data.Foldable as Foldable
             , Data.Semigroup as Semigroup
@@ -68,12 +66,12 @@ test-suite test-pretty-html
     hs-source-dirs: test-suite/test-pretty-html
     type: exitcode-stdio-1.0
     build-depends:
-        bytestring ^>= 0.10.12 || ^>= 0.11
+      , bytestring ^>= 0.10.12 || ^>= 0.11
       , filepath ^>= 1.4.2
       , pretty-html
       , pretty-html-paths
     mixins:
-        base
+      , base
             ( Control.Monad as Monad
             , System.Exit as Exit
             )

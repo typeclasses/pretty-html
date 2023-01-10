@@ -71,7 +71,7 @@ Generates the following HTML output:
 	<head>
 		<title>Example document</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="description" content="This &lt;htmlgt; was &quot;generated&quot; with Haskell.">
+		<meta property="description" content="This &lt;html&gt; was &quot;generated&quot; with Haskell.">
 		<link rel="stylesheet" type="text/css" href="../examples.css">
 	</head>
 	<body>

@@ -163,7 +163,7 @@ attrValue v = fold
 attrEscape :: Char -> TextBuilder
 attrEscape = \case
     '<' -> "&lt;"
-    '>' -> "gt;"
+    '>' -> "&gt;"
     '&' -> "&amp;"
     '"' -> "&quot;"
     c -> TextBuilder.singleton c
