@@ -181,7 +181,7 @@ text x = fold
 textEscape :: Char -> TextBuilder
 textEscape = \case
     '<' -> "&lt;"
-    '>' -> "gt;"
+    '>' -> "&gt;"
     '&' -> "&amp;"
     c -> TextBuilder.singleton c
 
